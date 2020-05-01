@@ -72,7 +72,12 @@ public class SimpleListLayout extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String i = (String) CustomList.getItemAtPosition(position);
-                    Toast.makeText(getApplicationContext(), i, Toast.LENGTH_LONG).show();
+                    if(!i.equals("NextList"))
+                        Toast.makeText(getApplicationContext(), i, Toast.LENGTH_LONG).show();
+                    else {
+                        Intent intent = new Intent(getApplicationContext(), ComplexList.class);
+                        startActivity(intent);
+                    }
             }
         });
     }

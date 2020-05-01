@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_weight="66.6"
-        android:gravity="center"
-        android:text="Name"/>
+        android:gravity="center"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -22,14 +21,12 @@
             android:id="@+id/birthdayText"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Brithday"/>
+            android:gravity="center"/>
         <TextView
             android:id="@+id/genderText"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:gravity="center"
-            android:text="Gender"/>
+            android:gravity="center"/>
 
     </LinearLayout>
 
