@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PersonListAdapterBestPractice extends ArrayAdapter<Person> {
@@ -20,7 +21,7 @@ public class PersonListAdapterBestPractice extends ArrayAdapter<Person> {
     private int mResource;
     private int lastPosition = -1;
 
-    public PersonListAdapterBestPractice(@NonNull Context context, int resource, @NonNull List<Person> objects) {
+    public PersonListAdapterBestPractice(@NonNull Context context, int resource, @NonNull ArrayList<Person> objects) {
         super(context, resource, objects);
 
         this.mContext = context;

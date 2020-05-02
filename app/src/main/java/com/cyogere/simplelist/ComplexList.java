@@ -2,9 +2,13 @@ package com.cyogere.simplelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -61,5 +65,17 @@ public class ComplexList extends AppCompatActivity {
         PersonListAdapter adapter = new PersonListAdapter(this, R.layout.adapter_view_layout, peopleList);
         ListView complexListView = findViewById(R.id.complexListView);
         complexListView.setAdapter(adapter);
+
+        complexListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position != 0)
+                  Toast.makeText(getApplicationContext(), "Position: "+position+" Clicked", Toast.LENGTH_SHORT).show();
+                else {
+                    Intent intent = new Intent(getApplicationContext(), CompListBestPractice.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }
