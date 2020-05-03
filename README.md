@@ -10,5 +10,6 @@ which contains a new type of list is launched.</pre></p>
   <li> <b>ComplexList:</b> This activity uses PersonListAdapter to attach an ArrayList of Person
        Object class on TextViwes that are in adapter_view_layout<br></li><br>    
   <li> <b>CompListBestPractice:</b> This activity uses PersonListAdapterBestPractice to attach an ArrayList of Person
-            Object class on TextViwes that are in adapter_view__best_practice_layout<br></li><br>           
+            Object class on TextViwes that are in adapter_view__best_practice_layout Above all<br>
+            It also load list Objects small portion at a time.<br></li><br>           
 <ol>
