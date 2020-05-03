@@ -1,4 +1,4 @@
-<h1><b>This application contain all sort of Lists</b></h1>
+<h1><b>This application contains all sort of Lists</b></h1>
 
 <p><pre>By clicking on the first list entry also called NextList, the following activity
 which contains a new type of list is launched.</pre></p>
