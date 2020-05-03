@@ -17,7 +17,7 @@
             android:layout_height="60dp"
             android:layout_weight="50"/>
         <TextView
-            android:id="@+id/bestPracticeNameText"
+            android:id="@+id/imageName"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_weight="50"
@@ -32,12 +32,12 @@
         android:layout_weight="50">
 
         <TextView
-            android:id="@+id/bestPracticeBirthdayText"
+            android:id="@+id/birthday"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"/>
         <TextView
-            android:id="@+id/bestPracticeGenderText"
+            android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:gravity="center"/>

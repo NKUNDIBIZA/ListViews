@@ -2,8 +2,12 @@ package com.cyogere.simplelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -14,7 +18,7 @@ public class CompListBestPractice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comp_list_best_practice);
 
-        Person ally = new Person("Ally", "22-08-1991", "Male");
+        Person ally = new Person("NextList", "03-05-1991", "Object");
         Person leader = new Person("Leader", "27-12-1992", "female");
         Person cyprian = new Person("Cyprian", "24-08-1993", "Male");
         Person freddy = new Person("Freddy", "22-01-1987", "Male");
@@ -57,5 +61,17 @@ public class CompListBestPractice extends AppCompatActivity {
         PersonListAdapterBestPractice adapter = new PersonListAdapterBestPractice(this, R.layout.adapter_view_best_practice_layout, peopleList);
         ListView complexListView = findViewById(R.id.bestPracticeComplexListView);
         complexListView.setAdapter(adapter);
+
+        complexListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if(position != 0)
+                    Toast.makeText(getApplicationContext(), "Position: "+position+" Clicked", Toast.LENGTH_SHORT).show();
+                else {
+                    Intent intent = new Intent(getApplicationContext(), CompListBestPracticeWithPictures.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }
