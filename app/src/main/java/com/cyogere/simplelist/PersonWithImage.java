@@ -5,11 +5,21 @@ public class PersonWithImage {
     private String name;
     private String birthday;
     private String gender;
+    private String imageURL;
 
-    public PersonWithImage(String name, String birthday, String gender) {
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public PersonWithImage(String name, String birthday, String gender, String image) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
+        this.imageURL = image;
     }
 
     public String getName() {
