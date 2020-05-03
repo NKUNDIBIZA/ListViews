@@ -1,7 +1,6 @@
 package com.cyogere.simplelist;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -75,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(getApplicationContext(), "Started a new activity", Toast.LENGTH_LONG).show();
 
-                    Intent intent = new Intent(getApplicationContext(), SimpleListLayout.class);
+                    Intent intent = new Intent(getApplicationContext(), SimpleListWithSearchFilter.class);
                     startActivity(intent);
                 } else {
 
