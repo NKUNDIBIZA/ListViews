@@ -11,5 +11,10 @@ which contains a new type of list is launched.</pre></p>
        Object class on TextViwes that are in adapter_view_layout<br></li><br>    
   <li> <b>CompListBestPractice:</b> This activity uses PersonListAdapterBestPractice to attach an ArrayList of Person
             Object class on TextViwes that are in adapter_view__best_practice_layout Above all<br>
-            It also load list Objects small portion at a time.<br></li><br>           
+            It also load list Objects small portion at a time.<br></li><br>  
+ <li> <b>CompListBestPracticeWithImages:</b> This activity uses PersonListAdapterBestPractice to<br>
+         attach an ArrayList of Person Object class on TextViwes that are in<br>
+         adapter_view__best_practice_with_pictures_layout Above all It also load list Objects<br>
+         small portion at a time. It also loads images from pixelbay using Univeral<br>
+         image loader<br></li><br>                     
 <ol>
