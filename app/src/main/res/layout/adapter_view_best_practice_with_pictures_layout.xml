@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="50"
+        android:weightSum="100">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"/>
+        <TextView
+            android:id="@+id/bestPracticeNameText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_weight="50">
+
+        <TextView
+            android:id="@+id/bestPracticeBirthdayText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/bestPracticeGenderText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
